@@ -26,7 +26,6 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -76,9 +75,7 @@ footer {
   background: var(--primary-color);
   width: 100%;
   padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  
 }
 
 footer h2 {
@@ -102,7 +99,7 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-color: var(--tertiary-color);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -271,7 +268,8 @@ section {
 .step h3 {
   color: var(--secondary-color);
   font-size: 46px;
-  flex: 1 30%;
+  flex: 1 100%;
+  text-align: center;
 }
 
 .step-text p {
@@ -295,6 +293,7 @@ section {
 .step-img {
   flex: 1 12%;
   margin-right: 20px;
+  text-align: center;
 }
 
 .step-text {
@@ -303,6 +302,12 @@ section {
 
 .step-img img {
   max-width: 100%;
+}
+
+.step img {
+  height: 400px;
+
+
 }
 
 .section-title {
@@ -452,6 +457,29 @@ section {
   color: var(--primary-color);
   background: var(--tertiary-color);
 }
+
+.contact-info ul {
+  list-style-type: none;
+  display: flex;
+  flex: 1 30%;
+  align-items: center;
+  justify-content: stretch;
+  font-size: 20px;
+}
+
+.contact-info li {
+  color: var(--primary-color);
+  margin: 20px auto;
+}
+
+.contact-info li a {
+  text-decoration: none;
+}
+
+footer h2 {
+  text-align: center;
+}
+
 /* REACH OUT STYLES END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -503,6 +531,10 @@ section {
   .contact-info iframe {
     flex: 1 100%;
   }
+
+  .step h3 {
+    flex: 1 100%;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -523,7 +555,7 @@ section {
   }
 
   .step-img {
-    flex: 0 32%;
+    flex: 0 100%;
     margin-right: 0;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -563,6 +595,5 @@ section {
   .contact-form {
     order: 3;
   }
-
-
+  
 }
