@@ -1,7 +1,7 @@
 # Gary Sanchez's Portfolio
 
 ## Purpose
-Ya bois portfolio
+To present my portfolio
 
 ## Built With
 * HTML
